@@ -3,7 +3,6 @@ import bat from "../img/batman.jpg";
 import sup from "../img/superman.jpg";
 import spy from "../img/spiderman.jpg";
 import { Movies } from "./Movie";
-import { UserImage } from "./UserImage";
 import { ClassSample } from "./ClassSample";
 import { Student } from "./Student";
 
@@ -66,7 +65,7 @@ export const Playground = () => {
         <Movies name="Batman" img={bat} />
         <Movies name="Superman" img={sup} />
         <Movies name="Spiderman" img={spy} />
-        <UserImage />
+
         <ClassSample />
         <hr />
       </div>

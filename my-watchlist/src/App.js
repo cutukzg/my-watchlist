@@ -7,13 +7,13 @@ import { Playground } from "./play ground/Playground";
 export const App = () => {
   return (
     <div className="App">
-      {/* <Header />
+      <Header />
       <hr />
       <Main />
       <hr />
       <Footer />
-      <hr /> */}
-      <Playground />
+      <hr />
+      {/* <Playground /> */}
     </div>
   );
 };

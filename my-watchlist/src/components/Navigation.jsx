@@ -1,23 +1,6 @@
-export const Navigation = () => {
-  const navList = [
-    {
-      url: "",
-      title: "All movies",
-    },
-    {
-      url: "favorites",
-      title: "Favorites",
-    },
-    {
-      url: "add",
-      title: "Add",
-    },
-    {
-      url: "search",
-      title: "Search",
-    },
-  ];
+import navList from "../data/navigation.json";
 
+export const Navigation = () => {
   return (
     <ul>
       {navList.map((navItem, index) => {
