@@ -5,6 +5,7 @@ import spy from "../img/spiderman.jpg";
 import { Movies } from "./Movie";
 import { ClassSample } from "./ClassSample";
 import { Student } from "./Student";
+import { Events } from "./Events";
 
 export const Playground = () => {
   const students = [
@@ -27,9 +28,13 @@ export const Playground = () => {
       jmbag: 64796396078,
     },
   ];
+  const introduction = (fullNameString) => {
+    alert(`My name is: ${fullNameString}`);
+  };
 
   return (
     <>
+      <Events />
       {students.map((student) => {
         return (
           <div key={student.jmbag}>
@@ -39,6 +44,7 @@ export const Playground = () => {
               average={student.average}
               passed={student.passed}
               jmbag={student.jmbag}
+              introStudent={introduction}
             />
             <br />
           </div>
@@ -52,6 +58,7 @@ export const Playground = () => {
           bday="1.2.3456."
           address="Street 1"
           parties={["HNS", "HSLS", "HSS"]}
+          introPerson={introduction}
         />
         <hr />
         <Person

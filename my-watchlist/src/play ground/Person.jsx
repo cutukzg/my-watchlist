@@ -11,6 +11,11 @@ export const Person = (props) => {
           return <div key={index}>{party}</div>;
         })}
       </div>
+      <button
+        onClick={() => props.introPerson(`${props.name} ${props.surname}`)}
+      >
+        Intro Person
+      </button>
     </>
   );
 };

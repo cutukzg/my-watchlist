@@ -11,6 +11,9 @@ export const Student = (props) => {
       <div>Prosjek: {props.average}</div>
       <div>Položeni kolegiji: {test}</div>
       <div>JMBAG: {props.jmbag}</div>
+      <button onClick={() => props.introStudent(props.fullName)}>
+        Intro Student
+      </button>
     </>
   );
 };
