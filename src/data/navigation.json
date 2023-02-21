@@ -1,0 +1,15 @@
+[
+  {
+    "url": "/",
+    "title": "All movies"
+  },
+  {
+    "url": "/favorites",
+    "title": "Favorites"
+  },
+
+  {
+    "url": "/search",
+    "title": "Search"
+  }
+]

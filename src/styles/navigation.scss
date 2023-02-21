@@ -1,0 +1,62 @@
+nav {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-bottom: 2px solid #27295a;
+
+    li {
+      position: relative;
+      padding: 36px;
+
+      a {
+        color: #929292;
+        text-decoration: none;
+
+        &.active {
+          color: #27295A;
+        }
+      }
+
+      a {
+        &.home-page {
+          &.notification {
+            &::before {
+              content: '';
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #27295A;
+              position: absolute;
+              top: 35px;
+              right: 28px;
+            }
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        &::after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 24px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #C4C4C4;
+        }
+      }
+    }
+  }
+}
